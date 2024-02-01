@@ -37,7 +37,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root .theme_auto {
     --bg-color: #FFF1F7;
     --text-color: #353430;
     --accent-color: #FF8DCB;
@@ -54,11 +54,11 @@
   } 
 
   @media (width >= 1024px) {
-    .title {
+    .theme_auto .title {
       text-shadow: 4px 4px 0px #FF0070;
     }
   
-    .title_footer {
+    .theme_auto .title_footer {
       text-shadow: 2px 2px 0px  #FF0070;
     }
   }
