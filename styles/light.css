@@ -4,7 +4,7 @@
   переключая тему
 */
 
-.root.theme_light {
+.root .theme_light {
   --bg-color: #FFF1F7;
   --text-color: #353430;
   --accent-color: #FF8DCB;
@@ -32,7 +32,7 @@
   --padding: clamp(10px, 2.6vi, 20px);
 }
 
-.theme_light.rec_decor {
+.theme_light .rec_decor {
   display: none;
 }
 
