@@ -8,14 +8,14 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  
   color: var(--text-color, #F1B2CE);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font);
   box-sizing: border-box;
   margin: 0;
 }
 
 .header {
+  height: 100vh;
   position: relative;
   display: grid;
   justify-items: end;
@@ -63,7 +63,7 @@
   position: absolute;
   inset-block-start: var(--padding);
   inset-inline-end: calc(var(--padding) + 19px);
-  color: var(--accent-color);
+  color: var(--heading-color);
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -84,7 +84,7 @@
 .header__theme-menu-button {
   display: block;
   color: var(--accent-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
@@ -110,24 +110,24 @@
 }
 
 .title {
-  color: var(--title-color);
+  color: var(--title-color, #DB00FF);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
   word-wrap: wrap;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   justify-self: start;
   margin: 0;
-  margin-top: 53px;
+  margin-top: 66px;
 }
 
 .subtitle {
-  color: var(--subtitle-color);
+  color: var(--subtitle-color, #000028);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.40px;
   word-wrap: break-word;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #FF0070);
   margin: 20px 0 10px;
 }
 
@@ -135,7 +135,7 @@
   margin: 0;
   color: var(--text-color);
   font-size: 18px;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font);
   font-weight: 400;
   line-height: 23.40px;
   word-wrap: wrap;
@@ -157,12 +157,11 @@
   justify-content: start;
   color: var(--heading-color);
   font-size: 18px;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font);
   font-weight: 700;
   line-height: 23.40px;
   word-wrap: wrap;
   margin: 0;
-  
 }
 
 .thin_text {
@@ -172,7 +171,7 @@
 .link {
   color: var(--text-color);
   font-weight: 400;
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 1px 0 var(--accent-color, #FF0070);
   text-decoration: none;
 }
 
@@ -219,7 +218,7 @@
 }
 
 .footer {
-  height: 647px;
+  height: 100vh;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -228,21 +227,18 @@
 }
 
 .title_footer {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
   margin: 0;
 }
 
 @media (width >= 768px) {
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-top: 173px;
   }
 
   .header__theme-menu-list {
     margin-top: 174px;
-  }
-
-  .title {
-    margin-top: 160px;
   }
 
   .header {
@@ -333,10 +329,6 @@
     grid-row: 3/4;
   }
 
-  .footer {
-    height: 984px;
-  }
-
   .title_footer {
     margin: 0;
   }
@@ -352,7 +344,7 @@
     display: flex;
     gap: 10px;
     margin: 0;
-    margin-right: 20px; 
+    margin-left: 20px; 
   }
 
   .title {
@@ -390,10 +382,6 @@
 
   .gallery {
     grid-template-rows: 25.4vi 30.7vi 42.3vi;
-  }
-
-  .footer {
-    height: 728px;
   }
 
   .title_footer {

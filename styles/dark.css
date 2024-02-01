@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root .theme_dark{
+:root.theme_dark {
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
@@ -30,4 +30,8 @@
   --main-font: 'IBM Plex Mono';
   --bg-image: url('../images/cover-image-dark.png');
   --padding: clamp(10px, 2.6vi, 20px);
+}
+
+.theme_dark .rec_decor {
+  display: block;
 }

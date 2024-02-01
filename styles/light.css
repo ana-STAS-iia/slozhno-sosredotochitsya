@@ -32,7 +32,7 @@
   --padding: clamp(10px, 2.6vi, 20px);
 }
 
-.theme_light .rec_decor {
+.theme_light.rec_decor {
   display: none;
 }
 
@@ -51,17 +51,25 @@
 
   .rec_decor {
     display: none;
-  }
-}
+  } 
 
-@media (width >= 1024px) {
-  .title {
-    text-shadow: 4px 4px 0px #FF0070;
+  @media (width >= 1024px) {
+    .title {
+      text-shadow: 4px 4px 0px #FF0070;
+    }
+  
+    .title_footer {
+      text-shadow: 2px 2px 0px  #FF0070;
+    }
   }
 }
 
 @media (width >= 1024px) {
   .theme_light .title {
     text-shadow: 4px 4px 0px #FF0070;
+  }
+
+  .theme_light .title_footer {
+    text-shadow: 2px 2px 0px  #FF0070;
   }
 }
